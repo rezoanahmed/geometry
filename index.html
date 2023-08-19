@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Geometry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-2 md:mt-10">
+        <h1 class="text-4xl text-center font-black underline">Geometry <span class="text-blue-600">Man</span></h1>
+    </header>
+
+    <main class="flex">
+        <div class="p-4 md:p-8 grid grid-cols-3 gap-4 flex-1">
+            <!-- triangle -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/triangle.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Triangle</h2>
+                    <p class="mb-2">Area (A) = <span id="t-area">0.5 * b * h</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input id="t-base" type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input id="t-height" type="number" placeholder="Height" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button id="area-triangle" class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+            <!-- rectangle -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/rectangle.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Rectangle</h2>
+                    <p class="mb-2">Area (A) = <span>w * l</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+            <!-- parallelogram -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/parallelogram.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Paralellogram</h2>
+                    <p class="mb-2">Area (A) = <span>b * h</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+            <!-- rhombus -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/rhombus.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Rhombus</h2>
+                    <p class="mb-2">Area (A) = <span>d1 * d2</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+            <!-- pantagon -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/pentagon.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Pentagon</h2>
+                    <p class="mb-2">Area (A) = <span>0.5 * p * b</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+            <!-- ellipse -->
+            <section class="border-solid border-2 border-gray-300 p-4 md:p-8 rounded-xl grid w-full hover:bg-blue-100">
+                <img src="images/ellipse.png" alt="triangle" class="mx-auto">
+                <div class="mt-4 text-center">
+                    <h2 class="text-2xl font-medium mb-2">Ellipse</h2>
+                    <p class="mb-2">Area (A) = <span>πab</span> cm<sup>2</sup></p>
+                    <div class="flex gap-2 justify-center">
+                        <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Base" class="border-solid border-2 border-gray-500 w-9/12"> cm
+                    </div>
+                    </div>
+                    <button class="mt-5 w-full bg-blue-500 text-white p-1 font-medium hover:bg-transparent hover:text-blue-600 hover:border-solid border-2 border-blue-600">Calculate</button>
+                </div>
+            </section>
+            
+        </div>
+        <div class="p-4 md:p-8">
+            <h2 class="font-medium text-xl text-center">Area Calculations</h2>
+            <div>
+                <ol id="parent" class="list-decimal"></ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="functions.js"></script>
+    <script src="calculations.js"></script>
+
+</body>
+</html>
